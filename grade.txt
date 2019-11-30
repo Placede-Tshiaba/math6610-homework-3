@@ -1,0 +1,4 @@
+10/10
+
+- recompile tex for comments
+- do *not* check in compiled pdfs

@@ -162,7 +162,7 @@ Figure~\ref{fig:22.1} shows that when Gaussian elimination with partial pivoting
   \caption{Probability density distributions for growth factors of random matrices of dimensions  $m =$ 8, 16, 32, based on samples sizes of one million for each dimension} \label{fig:22.2} 
   \end{center}
   \end{figure}\\
-The probability density plots show that in each case ($m =$8, 16, 32), the growth factor decreases exponentially with $\rho$. The peaks reflect the fact that the distribution is uniform and not normal.
+  The probability density plots show that in each case ($m =$8, 16, 32), the growth factor decreases exponentially with $\rho$. The peaks reflect the fact that the distribution is uniform and not normal.\note{This graph doesn't look right. You shouldn't be getting bimodal distributions.}
 
 \pagebreak
 
@@ -322,7 +322,7 @@ $T - T'$ is diagonal and
 \begin{flalign*}
 A = QTQ^* & = Q(T-T' + T')Q^* && \\
                     & = Q(T-T')Q^* + QT'Q^* &&\\
-                    & = T-T' + QT'Q^*
+                    & = T-T' + QT'Q^*\textrm{\note{ I don't think this last equality is true.}}
 \end{flalign*}
 $T'$ is diagonalizable means $\exists X$ and $D$ such that $T' = XDX^{-1}$ and we also have $\rho(T') <1.$
 \begin{flalign*}
@@ -355,7 +355,7 @@ $\\
 \norm{\text{exp}(tA)} & = \norm{\text{exp}(tQTQ^*)} &&\\
                          &  = \norm{\text{exp}(tQ(T-T'+T')Q^*)} &&\\
                          &  = \norm{I + tQ(T-T'+T')Q^* + \frac{1}{2}t^2(Q(T-T'+T')Q)^2+ \cdots} &&\\
-                        &  \leq \norm{\text{exp(t(T - T'))}} *\norm{\text{exp}tT'}
+                         &  \leq \norm{\text{exp(t(T - T'))}} *\norm{\text{exp}tT'} \textrm{\note{I don't think this inequality is true.}}
 \end{flalign*}
 $T-T' $i s diagonal and$ T'$ is diagonalizable, therefore;\\
 
